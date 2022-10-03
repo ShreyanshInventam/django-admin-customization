@@ -1,0 +1,18 @@
+{% load static %}
+{% block title %}API List {% endblock title %}
+
+{% block content %}
+
+<ul>
+    {% for i in obj %}
+    <l1>
+    <th>
+        <tr></tr><h5>The tile is -->  {{i.title}}</h5>
+        <h6>Content -->  {{i.body}}</h6>
+        <img src=  "{{i.pic.url}}" width="250" height="250">        </tr>
+    </th>
+    </l1>
+    {% endfor %}
+</ul>
+
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %} API Details {% endblock title %}
+
+{% block content %}
+<h1>{{ Task.title }}</h1>
+
+<pre>
+    {{ Task.body_preview }}
+</pre>
+
+{% endblock %}
